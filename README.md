@@ -3,8 +3,6 @@
 
 ![JavaScript](https://img.shields.io/badge/javascript-%23323330.svg?style=for-the-badge&logo=javascript&logoColor=%23F7DF1E) ![Python](https://img.shields.io/badge/python-3670A0?style=for-the-badge&logo=python&logoColor=ffdd54) ![DjangoREST](https://img.shields.io/badge/DJANGO-REST-ff1709?style=for-the-badge&logo=django&logoColor=white&color=ff1709&labelColor=gray)  ![Django](https://img.shields.io/badge/django-%23092E20.svg?style=for-the-badge&logo=django&logoColor=white)  ![React](https://img.shields.io/badge/react-%2320232a.svg?style=for-the-badge&logo=react&logoColor=%2361DAFB)   ![Webpack](https://img.shields.io/badge/webpack-%238DD6F9.svg?style=for-the-badge&logo=webpack&logoColor=black)  ![Git](https://img.shields.io/badge/git-%23F05033.svg?style=for-the-badge&logo=git&logoColor=white)  ![GitHub](https://img.shields.io/badge/github-%23121011.svg?style=for-the-badge&logo=github&logoColor=white)  ![Postgres](https://img.shields.io/badge/postgres-%23316192.svg?style=for-the-badge&logo=postgresql&logoColor=white)  ![Babel](https://img.shields.io/badge/Babel-F9DC3e?style=for-the-badge&logo=babel&logoColor=black)  ![Redux](https://img.shields.io/badge/redux-%23593d88.svg?style=for-the-badge&logo=redux&logoColor=white)
 
-
-![Home](https://user-images.githubusercontent.com/66418035/142405149-4275254a-1581-427e-b37a-e81fe98b940a.PNG)
 ![Read the Docs](https://img.shields.io/readthedocs/pip?style=plastic)
 ![GitHub commit merge status](https://img.shields.io/github/commit-status/mushahidmehdi/Full-Stack-Web-Application/main/c49a9cf916c11d163b7b4d1256b89c211793d6ee)
 [![Python 3.6](https://img.shields.io/badge/python-3.8.8-blue.svg)](https://www.python.org/downloads/release/python-360/)
@@ -69,4 +67,28 @@ To activate this Virtual Envroment:
 -  ``` python manage.py runserver ```
 
 
+
+### API Design:
+The Apis are design by serializing links model/nested nested into user model/table.
+
+```python
+{
+        "id": 1,
+        "name": "Mushahid Hussain",
+        "description": "Lorem ipsum dolor sit amet, const labore et dolore magna aliqua. teur sint occaecat cupidqui officia deserunt mollit anim id est laborum.",
+        "image": "https://linktreesnapsea.herokuapp.com/media/uploads/avataerr.png",
+        "links": [
+            {
+                "id": 1,
+                "profile": 1,
+                "title": "Github",
+                "url": "https://www.githun.com/mushahidmehdi"
+            }
+        ]
+    },
+
+```
+
+### Database Design:
+The Database tables only have one to many realationship using Forign key.
 
